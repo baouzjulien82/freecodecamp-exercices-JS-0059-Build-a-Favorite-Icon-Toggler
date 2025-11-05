@@ -9,7 +9,7 @@ const filledOrNot = (btn) => {
   } else {
     // Sinon → on le remplit
     btn.classList.add('filled');
-    btn.innerHTML = '&#9829;'; // cœur plein ♥
+    btn.innerHTML = '&#10084;'; // cœur plein ♥
   }
 };
 
