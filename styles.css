@@ -1,13 +1,52 @@
-.favorite-icon {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid black;*/
+}
+
+main {
+  margin: auto;
+  width: 50%;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px 0 20px 0;
+}
+
+ul {
+  list-style: none;
   font-size: 1.5rem;
+  display: block;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.favorite-icon {
+  font-size: 2rem;
   color: gray;
   background: none;
   border: none;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: font-size 0.2s ease, transform 0.2s ease;
 }
 
 .favorite-icon.filled {
   color: red;
+  transform: scale(1.2);
 }
 
+@media (min-width: 768px) {
+  main {
+    max-width: 600px;
+  }
+  }
