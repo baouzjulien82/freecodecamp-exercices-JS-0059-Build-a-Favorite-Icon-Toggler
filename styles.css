@@ -7,9 +7,14 @@
   /*border: 1px solid black;*/
 }
 
+body {
+  font-family: "Poppins", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+}
+
 main {
   margin: auto;
-  width: 50%;
+  width: 90%;
 }
 
 h1 {
@@ -19,7 +24,6 @@ h1 {
 
 ul {
   list-style: none;
-  font-size: 1.5rem;
   display: block;
 }
 
@@ -48,5 +52,6 @@ li {
 @media (min-width: 768px) {
   main {
     max-width: 600px;
+    font-size: 1.2rem;
   }
   }
